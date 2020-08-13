@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*header config*/
+header{
+    padding: 40px 0;
+    margin:auto;
+    width:85%;
+  }
+  
+  #link-words li a{
+    color:black;
+  }
+
+header .logo{
+    font-weight:700;
+    text-transform: uppercase;
+    color:#666;
+    text-decoration: none;
+    font-size:36px !important;
+    margin-left:-25px;
+}
+
+header .logo span{
+    color:#78ff00;
+}
+
+#footer h3{
+  color:white;
+}
+
+#copyrights p{
+  color: white;
+}
+
+/*menu.css begin*/
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    line-height: 1.4;
+    color: black;
+}
+
+body{
+  width:100%;
+}
+
+#background-container{
+  height:300px;
+  background-image:url(../img/restaurant/restaurant-ext.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position:50% 95%;
+  position:relative;
+}
+
+#top{
+  height:400px;
+  background-image:url(../img/restaurant/restaurant-good.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  position:relative;
+  margin: 0 0 80px 0;
+}
+#top h1{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:30%;
+  background-color:white;
+  padding:20px 20px 20px 6%;
+  font-size:50px;
+  color:#78ff00;
+}
+
+#brief-intro{
+  width:40%;
+  margin:0 auto;
+  text-align:center;
+}
+
+#brief-intro p{
+  color: #444; 
+}
+
+
+#full-description{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  margin:100px 0;
+}
+
+#full-description .img-description{
+  border-top:30px solid green;
+  width:40%;
+  margin:30px 50px;
+}
+
+#full-description .img-description img{
+  width:100%;
+  height:470px;
+  object-fit: cover;
+}
+
+
+#full-description .text-description{
+  padding:30px;
+  margin:30px 50px;
+  width:35%;
+  padding:30px;
+  border:3px dotted black;
+}
+
+#full-description .text-description p{
+  font-weight: 200;
+  font-size:18px;
+  margin:20px;
+}
+
+
+@media(max-width:1123px){
+  header{
+      width:90%;
+    }
+
+    #brief-intro{
+      width:80%;
+    }
+
+    #full-description .img-description{
+      margin:30px 20px;
+    }
+
+    #full-description .text-description{
+      padding:15px;
+      margin:30px 20px;
+    }
+}
+
+@media(max-width:1008px){
+  #full-description .text-description{
+    width:40%;
+  }
+}
+
+@media(max-width:775px){
+  #full-description .img-description{
+    width:80%;
+  }
+
+
+  #full-description .text-description{
+    width:80%;
+    padding:0;
+  }
+
+  #top h1{
+    width:40%;
+  }
+}
+
+@media(max-width:570px){
+  #top h1{
+    font-size:40px;
+  }
+}
+
+@media(max-width:466px){
+  #top h1{
+    font-size:35px;
+  }
+}
+
+@media(max-width:398px){
+  #top h1{
+    width:48%;
+  }
+}

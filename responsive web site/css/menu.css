@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*header config*/
+header{
+    padding: 40px 0;
+    margin:auto;
+    width:85%;
+  }
+  
+  #link-words li a{
+    color:black;
+  }
+
+header .logo{
+    font-weight:700;
+    text-transform: uppercase;
+    color:#666;
+    text-decoration: none;
+    font-size:36px !important;
+    margin-left:-25px;
+}
+
+header .logo span{
+    color:#78ff00;
+}
+
+#footer h3{
+  color:white;
+}
+
+#copyrights p{
+  color: white;
+}
+/*menu.css begin*/
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    line-height: 1.4;
+    color: black;
+}
+
+
+#background-container{
+    height:300px;
+    background-image:url(../img/background-food-principal2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:50% 90%;
+    position:relative;
+}
+
+#background-container2{
+    margin:0 -6.8%;
+    padding:0;
+
+    width:100vw !important;
+    height:300px;
+    background-image:url(../img/background-food-dessert.jpg) !important;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:center;
+    position:relative;
+}
+
+#background-container3{
+    display:none;
+}
+
+#background-container4{
+    display:none;
+}
+
+#menuAccueil{
+    width:100%;
+}
+#menuAccueil #menuTitre{
+    text-align:center;
+    margin:50px 0;
+}
+
+#menuAccueil #menuTitre h1{
+    font-size:50px;
+}
+
+#menuAccueil #menuTitre h3{
+    color:red;
+    font-size:45px;
+    font-family:'Dancing Script', cursive;
+}
+
+
+#menuAccueil #note{
+    width:90%;
+    margin: 0 auto 20px auto;
+    border:3px solid black;
+    text-align:center;
+}
+
+#menuAccueil #note #vegan{
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+#menuAccueil #menuTotal{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    background-color:rgba(236, 252, 236, 0.714);
+    padding-top:20px;
+}
+
+#menuAccueil #menuTotal .menuFormules-control{
+    display:flex;
+    flex-direction:column;
+    width:30%;
+    margin-bottom:70px;
+    margin-top:30px;
+}
+#menuAccueil #menuTotal .menuFormules-control h1{
+    text-align:center;
+    margin-bottom:20px;
+    padding-bottom:10px;
+    font-weight:600;
+    font-size:30px;
+    border-bottom: 2px dotted black;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control{
+    border-bottom:3px dashed #aaa;
+    display:flex;
+    justify-content: space-between;
+    height:100px;
+    padding-bottom:25px;
+    margin-bottom:15px;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control:hover{
+    border-bottom:3px dashed black;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-photo{
+    width:80px;
+    height:80px;
+    margin-right:10px;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-photo img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-titre{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width:60%;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-titre .item-titleDuo h2{
+    text-transform: uppercase;
+    font-weight:500;
+    font-size:16px;
+}
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-titre .item-titleDuo h3{
+    font-weight:300;
+    font-size:16px;
+    font-style: italic;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-titre p{
+    color:#777;
+    font-size:14px;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-price{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-weight:500;
+    font-size:24px;
+    color:#777;
+    width:70px;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control:hover .item-price{
+    color:black;
+}
+
+.fas{
+    font-size:20px;
+    color:green;
+    margin:0 auto;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-price img{
+    margin:0 auto;
+    width:25px;
+}
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-price .icons{
+    display:flex;
+    flex-direction: column;
+}
+
+@media(max-width:1155px){
+    #background-container2{
+        display:none;
+        margin:0;
+    }
+
+    #background-container3{
+        display:initial;
+        margin:0 ;
+        padding:0;
+    
+        width:100vw !important;
+        height:300px;
+        background-image:url(../img/background-food-dessert.jpg) !important;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+        background-position:center;
+        position:relative;
+    }
+    #background-container4{
+        display:initial;
+        margin:0;
+        padding:0;
+    
+        width:100vw !important;
+        height:300px;
+        background-image:url(../img/entree/pirojoc.jpg) !important;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+        background-position:center;
+        position:relative;
+    }
+
+    #menuAccueil{
+        padding:0;
+    }
+    
+    #menuAccueil #menuTotal .menuFormules-control{
+        width:45%;
+    }
+}
+
+@media(max-width:1123px){
+    header{
+        width:90%;
+      }
+}
+
+@media(max-width:992px){
+    #menuAccueil{
+        padding:0;
+    }
+}
+
+@media(max-width:670px){
+    #menuAccueil #menuTotal .menuFormules-control{
+        width:90%;
+    }
+}

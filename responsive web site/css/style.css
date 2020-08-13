@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*header config*/
+header{
+    padding:40px 60px;
+}
+
+/*style.css begin*/
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+}
+
+.container{
+    position:relative;
+    min-height:100vh;
+    background-image:url(../img/backgroundMoldova.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:center;
+}
+
+.container:before{
+    content: '';
+    position:absolute ;
+    top:0;
+    right:0;
+    width:320px;
+    height:750px;
+    background:linear-gradient(to right, #666, #101010);
+    z-index:0;
+}
+
+.content:after{
+    content: 'Authentique';
+    position:absolute ;
+    top:550px;
+    left:0;
+    font-size:10vw;
+    z-index:0;
+    font-weight:700;
+    color:#000;
+    opacity:0.4;
+}
+
+.content{
+    padding:0 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:50px;
+}
+
+.content .bannerText{
+    position:relative;
+    max-width:500px;
+    margin-right:50px;
+}
+
+.content .bannerText div{
+    display:none;
+}
+.content .bannerText div.active{
+    display:initial;
+}
+
+.content .bannerText h2{
+    font-size:54px;
+    text-transform: uppercase;
+    font-weight: 2000;
+    line-height: 1.2em;
+    color:#78ff00;
+}
+
+.content .bannerText p{
+    font-size:18px; 
+    color:black;
+    line-height:1.8em;
+    margin:20px 0;
+}
+
+.content .bannerText p #possible{
+    font-style: italic;
+    font-size:14px;
+}
+.content .bannerText p .text-bg{
+    background-color:#bbb;
+}
+
+
+.content .bannerText a{
+    position:relative;
+    text-transform: uppercase;
+    font-weight:700;
+    color:#111;
+    letter-spacing: 1px;
+    font-size:18px;
+    text-decoration: none;
+    padding:15px;
+    background-color:#ccc;
+    border-radius:3px;
+    transition:0.3s ease-in-out;
+}
+
+.content .bannerText a:hover{
+    background-color:#78ff00; 
+}
+
+.content .bannerText a:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:60px;
+    height:100%;
+    background: #78ff00;
+    z-index:-1;
+    transition: 0.5s ease-in-out;
+}
+
+.content .bannerText a:hover:before{
+    width:100%;
+}
+
+.content .bannerImg{
+    position:relative;
+    width:440px;
+    height:440px;
+    background:#000;
+}
+
+.content .bannerImg img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition:0.5s;
+    opacity:0;
+}
+
+.content .bannerImg img.active{
+    opacity:1;
+}
+
+/*Begin Icons*/
+
+.icons {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:50px 100px;
+}
+
+.icons .controls{
+    position:relative;
+    display:flex;
+}
+
+.icons .controls li{
+    list-style:none;
+    margin-left:20px;
+    cursor:pointer;
+    color:white;
+    border:2px white solid;
+    transition:0.5s ease-in-out;
+}
+
+.icons .controls li:hover{
+    opacity:0.5;
+}
+
+.icons .controls li i{
+    padding:10px 15px;
+}
+
+
+
+/*Begin Menu*/
+
+#menuAccueil{
+    padding:0 6%;
+    margin-bottom:60px;
+}
+#menuAccueil #menuTitre{
+    text-align:center;
+    margin:50px 0;
+}
+
+#menuAccueil #menuTitre h1{
+    font-size:50px;
+}
+
+#menuAccueil #menuTitre h3{
+    color:red;
+    font-size:45px;
+    font-family:'Dancing Script', cursive;
+}
+
+
+#menuAccueil #note{
+    border:3px solid black;
+    text-align:center;
+}
+
+#menuAccueil #note #vegan{
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+#menuAccueil #menuTotal{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    background-color:rgba(236, 252, 236, 0.714);
+    padding-top:20px;
+}
+
+#menuAccueil #menuTotal .menuFormules-control{
+    display:flex;
+    flex-direction:column;
+    width:30%;
+    margin-bottom:70px;
+    margin-top:30px;
+}
+#menuAccueil #menuTotal .menuFormules-control h1{
+    text-align:center;
+    margin-bottom:20px;
+    padding-bottom:10px;
+    font-weight:600;
+    font-size:30px;
+    border-bottom: 2px dotted black;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control{
+    border-bottom:3px dashed #aaa;
+    display:flex;
+    justify-content: space-between;
+    height:100px;
+    padding-bottom:25px;
+    margin-bottom:15px;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control:hover{
+    border-bottom:3px dashed black;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-photo{
+    width:80px;
+    height:80px;
+    margin-right:10px;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-photo img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-titre{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width:60%;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-titre .item-titleDuo h2{
+    text-transform: uppercase;
+    font-weight:500;
+    font-size:16px;
+}
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-titre .item-titleDuo h3{
+    font-weight:300;
+    font-size:16px;
+    font-style: italic;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-titre p{
+    color:#777;
+    font-size:14px;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-price{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-weight:500;
+    font-size:24px;
+    color:#777;
+    width:70px;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control:hover .item-price{
+    color:black;
+}
+
+#menuAccueil .fas{
+    font-size:20px;
+    color:green;
+    margin:0 auto;
+}
+
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-price img{
+    margin:0 auto;
+    width:25px;
+}
+#menuAccueil #menuTotal .menuFormules-control .item-control .item-price .icon{
+    display:flex;
+    flex-direction: column;
+}
+
+#menuAccueil #menuButton{
+    width:100%;
+    margin-bottom:60px;
+}
+
+#menuAccueil #menuButton a{
+    text-decoration: none;
+}
+#menuAccueil #menuButton button{
+    display:block;
+    padding: 0.75rem; 
+    background: #f34949;
+    border: 1px solid #f34949;
+    font-size:20px;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    transition:0.3s ease-in-out;
+    margin:0 auto;
+}
+  
+#menuAccueil #menuButton button:hover{
+    background-color:white;
+    color:#f34949;
+}
+
+#menuAccueil #menuButton button:active{
+    color:white;
+    background-color:rgb(30,50,200);
+    border:none;
+    box-shadow: 0 0 10px rgb(7, 22, 182);
+  }
+
+.swiper-container{
+    background-color:white;
+    height:300px;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.swiper-container .swiper-slide{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+    height:100%;
+}
+
+.swiper-container .swiper-slide img{
+    width:70%;
+    height:70%;
+    object-fit:cover;
+    transition:0.3s ease-in;
+}
+
+.swiper-container .swiper-slide img:hover{
+    width:80%;
+    height:80%;
+    box-shadow:5px 4px 8px 5px #888888;
+}
+
+.swiper-container .swiper-button-next,
+.swiper-container .swiper-button-prev{
+    color:red;
+}
+
+@media(max-width:1073px){
+    .content:after{
+        top:670px;
+    }
+}
+
+@media(max-width:1170px){
+    header{
+        width:93%;
+      } 
+  }
+  
+
+@media(max-width:1155px){
+    #menuAccueil{
+        padding:0;
+    }
+    
+    #menuAccueil #menuTotal .menuFormules-control{
+        width:45%;
+    }
+}
+@media(max-width:1060px){
+  #navbar{
+    padding:50px 0 100px 0;
+  }
+  #navbar .logo{
+    margin-left:30px;
+  }
+
+}
+
+@media(max-width:992px){
+
+    #navbar{
+        padding:20px 80px;
+    }
+    
+    .content,
+    .icons{
+        padding:20px 60px;
+    }
+    .container:before{
+        display:none;
+    }
+    .icons .controls li{
+        filter: invert(1);
+    }
+    .content {
+        
+        align-items: flex-start;
+        margin-top:0;
+        flex-direction:column-reverse;
+    }
+    .content .bannerText{
+        max-width:100%;
+        padding-right:0;
+    }
+    .content .bannerText h2{
+        font-size:30px;
+    }
+    .content .bannerImg{
+        width:100%;
+        height:40vh;
+        margin:20px 0;
+    }
+
+    #menuAccueil{
+        padding:0;
+    }
+}
+
+@media(max-width:760px){
+    #navbar,
+    .content,
+    .icons{
+        padding:20px 30px;
+    }
+    .icons .controls li i{
+        max-width:40px;
+    }
+}
+
+@media(max-width:664px){
+    #menuAccueil #menuTotal .menuFormules-control{
+        width:90%;
+    }
+}
+
+@media(max-width:583px){
+    .content:after{
+        top:800px;
+    }
+}
+
+@media(max-width:353px){
+    .content:after{
+        top:900px;
+    }
+}

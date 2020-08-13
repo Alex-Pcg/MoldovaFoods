@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+/*header config*/
+header{
+  padding: 40px 0 140px 0;
+  margin:auto;
+  width:85%;
+}
+
+#link-words li a{
+  color:black;
+}
+
+header .logo{
+  font-weight:700;
+  text-transform: uppercase;
+  color:#666;
+  text-decoration: none;
+  font-size:36px !important;
+  margin-left:-25px;
+}
+
+header .logo span{
+  color:#78ff00;
+}
+
+
+/*reserv .css*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: black;
+  margin: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #1b1b32;
+  background-image:
+    url(../img/backgroundMoldova.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 100%;
+}
+
+/*top intro*/
+
+.intro {
+  width:100%;
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.intro h1 {
+  font-size:2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.intro p {
+    font-size: 1.25rem;
+    color:red;
+}
+  
+.intro h1,
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+.text-center {
+  text-align: center;
+}
+
+
+/*main*/
+.main{
+  padding-top:20px;
+    color:black;
+    background-color:white;
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    justify-content: space-evenly;
+}
+
+/*img left side */
+.main #img-left{
+    width:30%;
+}
+
+.main #img-left img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+/* form */
+form {
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+#survey-form{
+    width:50%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+  width:40%;
+}
+
+#width-control{
+    width:90%;
+    padding:0.25rem;
+}
+
+#width-control2{
+    width:90%;
+    padding:0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25);
+}
+
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+    width:100%;
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem; 
+  background: #f34949;
+  border: 1px solid #f34949;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  transition:0.3s ease-in-out;
+}
+
+.submit-button:hover{
+  background-color:white;
+  color:#f34949;
+}
+.submit-button:active{
+  color:white;
+  background-color:rgb(30,50,200);
+  border:none;
+  box-shadow: 0 0 10px rgb(7, 22, 182);
+}
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.statusMsg{
+  width:100%;
+}
+.statusMsg p{
+  text-align:center;
+  color:green;
+  font-weight: 700;
+  font-size:20px;
+}
+
+
+@media(max-width:1200px){
+  #survey-form{
+    width:60%;
+  }
+}
+
+@media(max-width:1000px){
+    .main{
+        flex-direction: column;
+    }
+
+    .main #img-left{
+        width:100%;
+    }
+    .main #img-left{
+      height:100vh;
+    }
+
+    #survey-form{
+        width:100%;
+    }
+}
+
+@media(max-width:1170px){
+  header{
+      width:93%;
+    } 
+}
+
+@media(max-width: 1068px){
+  header #link-words{
+    margin-right:-20px;
+  }
+}
+
+@media(max-width:1060px){
+  #navbar{
+    margin:30px;
+    padding:20px 0 100px 0;
+  }
+  #navbar .logo{
+    margin-left:0;
+  }
+
+}
+
+@media(max-width:760px){
+    
+    #survey-form{
+        flex-direction:column;
+        flex-wrap:wrap;
+    }
+    .form-group {
+        margin: 0 auto 1.25rem auto;
+        padding: 0.25rem;
+        width:90%;
+      }
+}
+
+  @media (min-width: 480px) {
+    form {
+      padding: 2.5rem;
+    }
+  }

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*header config*/
+header{
+    padding: 40px 0 150px 0;
+    margin:auto;
+    width:85%;
+  }
+  
+  #link-words li a{
+    color:black;
+  }
+
+header .logo{
+    font-weight:700;
+    text-transform: uppercase;
+    color:#666;
+    text-decoration: none;
+    font-size:36px !important;
+    margin-left:-25px;
+}
+
+header .logo span{
+    color:#78ff00;
+}
+
+#footer h3{
+  color:white;
+}
+
+#copyrights p{
+  color: white;
+}
+
+/*menu.css begin*/
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    line-height: 1.4;
+    color: black;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #1b1b32;
+    background-image:
+      url(../img/backgroundMoldova.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 230%;
+  }
+
+
+#contact{
+    background-color:white;
+    font-size:15px;
+    font-weight:400;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap-reverse;
+}
+
+#location{
+    margin: auto 0;
+}
+
+form {
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+}
+
+#survey-form{
+    width:50%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#survey-form h2{
+    font-size:30px;
+    margin:0 auto;
+}
+  
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    width:90%;
+}
+  
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.25);
+  }
+
+  
+.input-textarea {
+    width:100%;
+  min-height: 120px;
+  width: 100%;
+  resize: vertical;
+}
+
+
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem; 
+  background: #f34949;
+  border: 1px solid #f34949;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  transition:0.3s ease-in-out;
+}
+
+.submit-button:hover{
+  background-color:white;
+  color:#f34949;
+}
+.submit-button:active{
+  color:white;
+  background-color:rgb(30,50,200);
+  border:none;
+  box-shadow: 0 0 10px rgb(7, 22, 182);
+}
+
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+#survey-form .form-group p{
+    font-size:1.125rem;
+}
+
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.statusMsg{
+  width:100%;
+}
+.statusMsg p{
+  text-align:center;
+  color:green;
+  font-weight: 700;
+  font-size:20px;
+}
+
+
+@media(max-width:1170px){
+  header{
+      width:93%;
+    } 
+}
+
+@media(max-width:1090px){
+    #survey-form,
+    #location{
+        width:90%;
+    }
+}
+
+@media(max-width:1060px){
+  #navbar{
+    margin:30px;
+    padding:20px 0 100px 0;
+  }
+  #navbar .logo{
+    margin-left:0;
+  }
+}
